@@ -1,0 +1,20 @@
+###################
+# Cron fields
+#   minute       0-59
+#   hour         0-23
+#   day of month 1-31
+#   month        1-12
+#   day of week  0-7 (0 or 7 is Sun)
+#
+
+# Backup the server daily
+0 0 * * * /bin/backup.sh
+
+# Backup the database every hour
+0 * * * * /bin/backup_db.sh
+
+# Send email once a week
+0 0 * * 4 /bin/send_report.sh
+
+# Check data every 5 minutes
+0-59/5 * * * * /bin/check_data.sh
