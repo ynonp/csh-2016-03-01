@@ -1,0 +1,6 @@
+
+# no need for #!/bin/tcsh
+# no need chmod +x
+
+set trash = ~/TRASH/files
+set index = ~/TRASH/index
